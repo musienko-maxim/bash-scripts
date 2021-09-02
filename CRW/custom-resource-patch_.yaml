@@ -1,0 +1,10 @@
+spec:
+  server:
+    cheImage: 'quay.io/crw/server-rhel8'
+    cheImageTag: '2.3-35'
+    devfileRegistryImage: 'quay.io/crw/devfileregistry-rhel8:latest'
+    pluginRegistryImage: 'quay.io/crw/pluginregistry-rhel8:latest'
+    customCheProperties:
+      CHE_WORKSPACE_PLUGIN__BROKER_METADATA_IMAGE: 'quay.io/crw/pluginbroker-metadata-rhel8:latest'
+      CHE_WORKSPACE_PLUGIN__BROKER_ARTIFACTS_IMAGE: 'quay.io/crw/pluginbroker-artifacts-rhel8:latest'
+      CHE_SERVER_SECURE__EXPOSER_JWTPROXY_IMAGE: 'quay.io/crw/jwtproxy-rhel8:latest'
